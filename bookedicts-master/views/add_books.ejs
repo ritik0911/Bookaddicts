@@ -1,0 +1,29 @@
+<%-include('partials/header')%>
+ <div class="container text-center mt-4">
+    <h1 class="mb-3">Add a new Book</h1>
+    <form action="/add_books" method="POST">
+        <div style="width:70%; margin: 0 auto">
+             <div class="form-group">
+                <input  class="form-control" type="text" name="name" id="" placeholder="write name">
+             </div>
+             <div class="form-group">
+                <input  class="form-control" type="number" name="price" id="" placeholder="price in dollars" min="0.01" step="0.01">
+             </div>
+             <div class="form-group">
+                <input  class="form-control" type="number" name="phone" id="" placeholder="contact number">
+             </div>
+             <div class="form-group">
+                <input type="text"  class="form-control" name="image" placeholder="image url">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="discription" placeholder="image discription"> 
+            </div> 
+            <div class="form-group" style="width:30%; margin: 0 auto">
+                <input type="submit" class="btn btn-primary btn-large btn-block"> 
+            </div>
+          
+        </div>
+    </form>
+    <a href="/books">go back</a>
+ </div>
+<%-include('partials/footer')%>

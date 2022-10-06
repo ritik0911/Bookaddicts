@@ -1,0 +1,12 @@
+.img-thumbnail  {
+    padding:0;
+}
+.img-thumbnail .caption-full{
+    padding: 8px;
+}
+.jumbotron{
+    padding: 4px;
+}
+#delete_book{
+    display: inline;
+}
